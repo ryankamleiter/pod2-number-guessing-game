@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Guess A Number!</title>
-  <script src="scripts/client.js"></script>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Guess A Number!</title>
+    <script src="scripts/client.js"></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <h1>YOUR GAME HERE!</h1>
-</body>
+    <form>
+      <input type="text" placeholder="player one" />
+      <input type="text" placeholder="player two" />
+      <input type="text" placeholder="player three" />
+      <input type="text" placeholder="player four" />
+      <button>submit Guess</button>
+    </form>
+    <p>total guess are 10</p>
+    <table>
+      <thead>
+        <tr>
+          <th>player one</th>
+          <th>player two</th>
+          <th>player three</th>
+          <th>player four</th>
+          <th>Correct Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <p>5</p>
+            <p>too high</p>
+          </td>
+          <td>
+            <p>3</p>
+            <p>too low</p>
+          </td>
+          <td>
+            <p>1</p>
+            <p>too low</p>
+          </td>
+          <td>
+            <p>4</p>
+            <p>Correct</p>
+          </td>
+          <td>4</td>
+        </tr>
+      </tbody>
+    </table>
+    <button>Reset</button>
+    
+  </body>
 </html>
