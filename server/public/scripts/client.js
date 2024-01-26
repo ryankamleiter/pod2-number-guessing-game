@@ -84,7 +84,15 @@ for (let guess of guesses){
 
 
 function displayResult(){
+  let guessComparison = document.getElementById('placeholder')
 if (distanceFromGuess > randomNumber){
+  guessComparison.innerHTML = `
+  <tr>
+  <td>
+    <p>Too high</p>
+  </td>
+  </td>
+  `
   return "Too high";}
 else if (distanceFromGuess < randomNumber){
   return "Too low";}
